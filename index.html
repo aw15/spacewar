@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orbit Dominion은 별자리를 무대로 행성과 함대를 지휘하는 모바일 우주 전략 게임입니다.">
+  <title>Orbit Dominion | 우주 전략 게임</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #080d1c;
+      color: #f5f7ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background:
+        radial-gradient(circle at 75% 15%, #243c74 0, transparent 32%),
+        radial-gradient(circle at 12% 60%, #152c53 0, transparent 38%),
+        #080d1c;
+      line-height: 1.65;
+    }
+
+    .wrap { width: min(100% - 40px, 960px); margin-inline: auto; }
+
+    header { padding-block: 28px; }
+    .brand { color: #b9d9ff; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.18em; text-decoration: none; }
+
+    main { padding-block: 76px 96px; }
+    .eyebrow { color: #80c8ff; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.18em; }
+    h1 { max-width: 700px; margin: 18px 0 24px; font-size: clamp(2.8rem, 8vw, 5.4rem); line-height: 1.08; letter-spacing: -0.05em; }
+    .lead { max-width: 640px; margin: 0; color: #d3ddf2; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+
+    .orbit {
+      position: relative;
+      width: min(72vw, 320px);
+      aspect-ratio: 1;
+      margin: 72px auto;
+      border: 1px solid #6fa6ff66;
+      border-radius: 50%;
+      box-shadow: 0 0 80px #367cff20, inset 0 0 80px #367cff15;
+    }
+    .orbit::before, .orbit::after { content: ""; position: absolute; border-radius: 50%; }
+    .orbit::before {
+      width: 42%; aspect-ratio: 1; top: 29%; left: 29%;
+      background: radial-gradient(circle at 35% 30%, #c7f0ff, #4888db 48%, #1b376d 78%);
+      box-shadow: 0 0 55px #54a8ff88;
+    }
+    .orbit::after {
+      width: 12%; aspect-ratio: 1; top: 9%; right: 17%;
+      background: #ffd689; box-shadow: 0 0 24px #ffd689aa;
+    }
+
+    h2 { margin: 0 0 24px; font-size: 1.7rem; }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { padding: 24px; border: 1px solid #789cda44; border-radius: 16px; background: #101b32bb; }
+    .feature h3 { margin: 0 0 8px; font-size: 1.12rem; }
+    .feature p { margin: 0; color: #bfcae0; }
+
+    footer { padding-block: 24px 36px; border-top: 1px solid #789cda33; color: #9eacc8; font-size: 0.9rem; }
+    @media (max-width: 680px) {
+      main { padding-block: 48px 72px; }
+      .features { grid-template-columns: 1fr; }
+      .orbit { margin-block: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="/">ORBIT DOMINION</a></header>
+
+  <main class="wrap">
+    <section aria-labelledby="title">
+      <div class="eyebrow">모바일 우주 전략 게임</div>
+      <h1 id="title">별을 잇고,<br>우주를 지휘하세요.</h1>
+      <p class="lead">Orbit Dominion에서 행성을 점령하고 함대를 보내 별자리를 넓혀 가세요. 매 전투마다 경로와 타이밍을 선택하는 실시간 전략 게임입니다.</p>
+    </section>
+
+    <div class="orbit" aria-hidden="true"></div>
+
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">게임 소개</h2>
+      <div class="features">
+        <article class="feature">
+          <h3>행성 점령</h3>
+          <p>함대를 보내 중립 행성과 적 행성을 점령하세요.</p>
+        </article>
+        <article class="feature">
+          <h3>별자리 스테이지</h3>
+          <p>별자리를 따라 새로운 전장을 탐험하세요.</p>
+        </article>
+        <article class="feature">
+          <h3>함대 성장</h3>
+          <p>전투 보상으로 전력을 키우고 다음 전투를 준비하세요.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© Orbit Dominion</div></footer>
+</body>
+</html>
